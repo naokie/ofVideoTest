@@ -20,4 +20,5 @@ class ofApp : public ofBaseApp{
     
         ofVideoGrabber myGrab;
         ofSpherePrimitive mySphere;
+        ofEasyCam myCam;
 };

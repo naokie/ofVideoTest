@@ -18,11 +18,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    myCam.begin();
+    
     myGrab.draw(0, 0, ofGetWidth(), ofGetHeight());
     
     mySphere.set(100, 16);
     mySphere.setPosition(ofGetWidth() * .2, ofGetHeight() * .75, 0);
     mySphere.drawWireframe();
+    
+    myCam.end();
 }
 
 //--------------------------------------------------------------
