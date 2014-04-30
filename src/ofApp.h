@@ -18,8 +18,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        ofVideoGrabber myGrab;
+        // ofVideoGrabber myGrab;
         ofSpherePrimitive mySphere;
         ofBoxPrimitive myBox;
         ofEasyCam myCam;
+        ofLight myLight;
 };

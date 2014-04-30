@@ -3,30 +3,40 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFrameRate(60);
+    ofEnableSmoothing();
+    ofEnableDepthTest();
+    
     ofBackground(ofColor::black);
     
-    myGrab.setVerbose(true);
-    myGrab.initGrabber(640, 480);
+    // myGrab.setVerbose(true);
+    // myGrab.initGrabber(640, 480);
+    
+    myLight.enable();
+    myLight.setSpotlight();
+    myLight.setPosition(-100, 100, 100);
+    myLight.setAmbientColor(ofFloatColor(0.5, 0.2, 0.2, 1.0));
+    myLight.setDiffuseColor(ofFloatColor(0.5, 0.5, 1.0));
+    myLight.setSpecularColor(ofFloatColor(1.0, 1.0, 1.0));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    myGrab.update();
+    // myGrab.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    myGrab.draw(0, 0, ofGetWidth(), ofGetHeight());
+    // myGrab.draw(0, 0, ofGetWidth(), ofGetHeight());
     
     myCam.begin();
     
     myBox.set(200);
     myBox.setPosition(-150, 0 ,0);
-    myBox.drawWireframe();
+    myBox.draw();
     
     mySphere.set(100, 16);
-    mySphere.setPosition(ofGetWidth() * .2, ofGetHeight() * .75, 0);
-    mySphere.drawWireframe();
+    mySphere.setPosition(150, 0, 0);
+    mySphere.draw();
     
     myCam.end();
 }
