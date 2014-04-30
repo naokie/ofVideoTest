@@ -7,6 +7,8 @@ void ofApp::setup(){
     
     myGrab.setVerbose(true);
     myGrab.initGrabber(640, 480);
+    
+    mySphere.setRadius(ofGetWidth() / 20);
 }
 
 //--------------------------------------------------------------
@@ -16,7 +18,11 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    myGrab.draw(0, 0);
+    myGrab.draw(0, 0, ofGetWidth(), ofGetHeight());
+    
+    mySphere.set(100, 16);
+    mySphere.setPosition(ofGetWidth() * .2, ofGetHeight() * .75, 0);
+    mySphere.drawWireframe();
 }
 
 //--------------------------------------------------------------

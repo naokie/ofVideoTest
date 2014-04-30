@@ -19,4 +19,5 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         ofVideoGrabber myGrab;
+        ofSpherePrimitive mySphere;
 };
