@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B896AFDB1910DA3E00E64DBE /* vboMeshCam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B896AFD91910DA3E00E64DBE /* vboMeshCam.cpp */; };
 		B8D09A281910D12B0045D2BE /* meshTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D09A261910D12B0045D2BE /* meshTest.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -60,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B896AFD91910DA3E00E64DBE /* vboMeshCam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vboMeshCam.cpp; sourceTree = "<group>"; };
+		B896AFDA1910DA3E00E64DBE /* vboMeshCam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vboMeshCam.h; sourceTree = "<group>"; };
 		B8D09A261910D12B0045D2BE /* meshTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = meshTest.cpp; sourceTree = "<group>"; };
 		B8D09A271910D12B0045D2BE /* meshTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meshTest.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				B8D09A261910D12B0045D2BE /* meshTest.cpp */,
 				B8D09A271910D12B0045D2BE /* meshTest.h */,
+				B896AFD91910DA3E00E64DBE /* vboMeshCam.cpp */,
+				B896AFDA1910DA3E00E64DBE /* vboMeshCam.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B896AFDB1910DA3E00E64DBE /* vboMeshCam.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				B8D09A281910D12B0045D2BE /* meshTest.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
