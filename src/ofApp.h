@@ -23,4 +23,5 @@ class ofApp : public ofBaseApp{
         ofBoxPrimitive myBox;
         ofEasyCam myCam;
         ofLight myLight;
+
 };
