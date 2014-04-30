@@ -18,7 +18,12 @@ class meshTest : public ofBaseApp{
         void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
     
+        static const int WIDTH = 200;
+        static const int HEIGHT = 200;
+        static const int NUM_PARTICLES = WIDTH * HEIGHT;
+    
         ofEasyCam myCam;
-        ofMesh myMesh;
-        int w, h;
+        ofVbo myVbo;
+        ofVec3f myVerts[NUM_PARTICLES];
+        ofFloatColor myColor[NUM_PARTICLES];
 };
